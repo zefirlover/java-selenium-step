@@ -4,8 +4,6 @@ import org.example.helpers.TestBase;
 import org.junit.Test;
 import java.time.Duration;
 
-// todo rename LoginTest
-
 public class PagesDisplaySpec extends TestBase {
     /*
         The login page in Step automatically fill credential inputs with
@@ -17,8 +15,8 @@ public class PagesDisplaySpec extends TestBase {
     */
     @Test
     public void loginTest() {
-        loginPage.checkAutoInput();
-        //loginPage.clickLoginBtn();
+        //loginPage.checkAutoInput();
+        loginPage.clickLoginBtn();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         plansPage.isPlansDisplayed();
     }
