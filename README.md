@@ -16,6 +16,8 @@ page and do the actions mentioned there.
 Then, install the Chrome and the appropriate version of ChromeDriver:
 https://chromedriver.chromium.org/downloads
 
+Do not forget about installing the Maven: https://www.baeldung.com/install-maven-on-windows-linux-mac
+
 After that you can download the project.![img.png](img.png)
 Click the "code" button. You can download ZIP archive or use the `git clone` command.
 
