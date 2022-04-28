@@ -1,5 +1,7 @@
 package org.example.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -13,6 +15,7 @@ public class GridPage {
 
     public void redirectToGrid() {
         driver.findElement(By.xpath("//*[contains(text(),'Grid')]")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
 
     public void isGridDisplayed() {

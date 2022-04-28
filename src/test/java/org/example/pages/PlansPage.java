@@ -1,5 +1,7 @@
 package org.example.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -13,6 +15,7 @@ public class PlansPage {
 
     public void redirectToPlans() {
         driver.findElement(By.xpath("//*[contains(text(),'Plans')]")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
 
     public void isPlansDisplayed() {

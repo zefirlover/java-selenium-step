@@ -1,5 +1,7 @@
 package org.example.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +16,7 @@ public class ExecutionsPage {
 
     public void redirectToExecutions() {
         driver.findElement(By.xpath("//*[contains(text(),'Executions')]")).click();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
 
     public void isExecutionsDisplayed() {
