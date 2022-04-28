@@ -6,15 +6,13 @@ import org.junit.Test;
 public class PagesDisplaySpec extends TestBase {
     /*
         The login page in Step automatically fill credential inputs with
-        login "admin" and password "init". This test checks the inputs,
-        if the login = admin and password = init, it clicks the login
-        and checks user is log in by checking existence of the button,
-        that can be shown on the default page (Plans page) only if user is
-        log in
+        login "admin" and password "init". This test checks the inputs by
+        clicking the login button and check user is log in by checking existence 
+        of the button, that can be shown on the default page (Plans page) only if
+        user is log in.
     */
     @Test
     public void loginTest() {
-        //loginPage.checkAutoInput();
         loginPage.clickLoginBtn();
         plansPage.isPlansDisplayed();
     }

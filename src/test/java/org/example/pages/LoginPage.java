@@ -35,14 +35,6 @@ public class LoginPage {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
 
-    public void checkAutoInput() {
-        String loginText = inpLogin.getText();
-        String passwordText = inpPassword.getText();
-        if (loginText.equals("admin") && passwordText.equals("init")) {
-            clickLoginBtn();
-        }
-    }
-
     public void checkLogin() {
         if (btnLogin.isDisplayed()) {
             btnLogin.click();
